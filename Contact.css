@@ -1,0 +1,82 @@
+/* Contact Page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Raleway:ital,wght@1,100;1,800&display=swap');
+
+/* Body with background image */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('wm4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;
+    /* Other background properties */
+}
+
+/* Contact Form Container */
+.contact-form {
+    padding: 20px;
+}
+
+/* Labels for form fields */
+label {
+    color: white; /* Set label text color to white */
+}
+
+/* Text inputs with transparent background */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the alpha value (0.5 for 50% opacity) */
+    color: white; /* Set text color to white */
+    transition: background-color 0.3s ease; /* Add transition for a smoother effect */
+    height: 40px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Maintain the same background on focus */
+    color: white;
+}
+
+/* Target the specific textarea with the ID 'message' */
+textarea#message {
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the alpha value (0.5 for 50% opacity) */
+    color: white; /* Set text color to white */
+    height: 200px;
+    resize: vertical;
+}
+
+/* Contact Form Container */
+.container {
+    padding-top: 150px; /* Adjust top padding as needed */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    resize: vertical;
+}
+
+.container h1{
+    color: white;
+    margin-top: 20px;
+}
+
+/* Columns for form fields */
+.col {
+    flex: 1; /* Equal width columns */
+    margin-right: 10px; /* Spacing between columns */
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+    .col {
+        flex: 100%; /* Full width columns on small screens */
+        margin-right: 0; /* Remove spacing between columns */
+        margin-bottom: 10px; /* Add margin bottom for separation */
+    }
+}

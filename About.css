@@ -1,0 +1,200 @@
+/* About Page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Raleway:ital,wght@1,100;1,800&display=swap');
+
+
+body, html {
+    background-color: #323232;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', Times;
+}
+
+.section {
+    height: 100vh; /* Set each section to full viewport height */
+    background-position: center;
+    background-size: cover;
+}
+
+.section1 {
+    background-image: url('abg.jpg'); /* First section background image */
+}
+
+.section2 {
+    background-image: url('why.jpg'); /* Second section background image */
+}
+
+.section2 h2{
+    font-weight: bold;
+}
+
+.section3 {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('abg2.jpg'); /* Third section background image */
+}
+
+.section3 h1{
+    font-style: italic;
+    padding: 10px;
+    font-size: 60px;
+    margin-top: 80px;
+}
+
+.section3 h2{
+    padding: 10px;
+}
+
+.section3 h3{
+    font-size: 30px;
+    padding: 0;
+    font-style: normal;
+}
+
+.section3 h4{
+    padding: 15px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.section3 p{
+    padding: 15px;
+    font-size: 15px;
+}
+
+/*First container*/
+.container{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*About*/
+h1{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 5rem;
+    padding: 15px;
+}
+/*Paragraph under about*/
+p{
+    max-width: 600px;
+    line-height: 1.5;
+    padding: 1rem;
+    font-size: 18px;
+}
+
+ /* More and Trips Button */
+.container a{
+    display: inline-block;
+    color: white;
+    padding: 0.7rem 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 0.7rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.container a:hover{
+    background-color: #222;
+    transform: scale(1.1)
+}
+
+.blank {
+    width: 100%;
+    height: 20px;
+}
+
+ /* More page */
+html {
+    scroll-behavior: smooth;
+}
+
+.three {
+    color: black;
+    padding: 40px; 
+    text-align: center; 
+}
+
+
+
+.container.three h2{
+    font-style: italic;
+}
+
+.container.three p {
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+    text-align: center;
+}
+
+/* Second background image*/
+.second{
+    background-attachment: fixed;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+/* Trips */
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 500px;
+    background-color: #323232;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.7rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    transition: all 0.4s ease;
+}
+
+.card .info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card .info img{
+    width: 90%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    border-radius: 0.7rem;
+    border-image: fill;
+}
+
+.card .info h3{
+    font-weight: 700;
+    font-size: calc(0.8rem + 1vw);
+    margin-top: 1rem;
+}
+
+
+
+.card .info p{
+    margin-bottom: 1rem;
+}
+
+.card a{
+    margin-bottom: 1.5rem;
+    width: 70%;
+}
+
+.card:hover{
+    transform: scale(1.1)
+}
